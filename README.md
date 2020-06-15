@@ -25,8 +25,8 @@
 |  11. 표본을 대상으로 만족도 조사 시행  |       |       |       |  :heavy_minus_sign:     |
 
 ## Packages
-tensorflow 1.15.2
-cornac 1.6.1
+* tensorflow 1.15.2
+* cornac 1.6.1
 
 ## Results
 * Main code, table, graph, comparison, ...
