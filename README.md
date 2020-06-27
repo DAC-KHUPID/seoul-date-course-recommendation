@@ -26,8 +26,8 @@
 |  11. 표본을 대상으로 만족도 조사 시행  |       |       |       |  :heavy_check_mark:     |
 
 ## Packages
-* tensorflow(1.15.2) https://github.com/tensorflow/docs/tree/r1.5/site/en/api_docs)
-* scikit-learn(0.22.1) (https://pypi.org/project/scikit-learn/0.22.1/)
+* [tensorflow(1.15.2)](https://github.com/tensorflow/docs/tree/r1.5/site/en/api_docs)
+* [scikit-learn(0.22.1)](https://pypi.org/project/scikit-learn/0.22.1/)
 * cornac(1.6.1) (https://pypi.org/project/cornac/)
 * pypapago (https://github.com/Beomi/pypapago)
 * nltk(3.4.5) (https://pypi.org/project/nltk/3.4.5/)
