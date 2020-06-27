@@ -12,7 +12,7 @@
 이 프로젝트의 **최종 결과물은 데이트 취향과 위치를 고려한 데이트 코스 추천 알고리즘**이며 데이트 코스에는 사용자의 취향에 맞춘 맛집/카페, 데이트 명소(유명 방문지, 보드게임 카페, 볼링장, 방탈출 카페 등등), 영화가 포함되어 있다. 또한 데이트를 하고자 하는 지역구를 선택한다면, 이에 대한 **코스 필터링 기능을 제공**하는 것 또한 최종 결과물에 포함되도록 한다.
 
 - 정량적 목표   
-정형화된 데이터 셋이 아닌 점과 선행 연구에 대한 오픈소스 프로젝트가 없는 관계로, 선행 연구와 비교한 정량적 목표 설정은 무리가 있다는 점을 인지하였다. 따라서 표본을 모집 후 만족도를 조사하여 **MOS 기법을 바탕으로 만족도를 조사**하는 것을 대체 방안으로 채택하였다. 테스터들은 구글 설문지를 통해 몇가지 문항들에 답변한 후, 메일로 알고리즘이 추천한 데이트 코스 결과를 받고 이후 다시 메일에 첨부된 만족도 조사에 답하게 된다. 만족도 조사는 알고리즘이 추천한 코스에 대한 만족도를 묻는 총 1개의 문항으로, 1점 '매우 불만족한다' 부터 시작하여 5점 '매우 만족한다까지'로 척도를 제시된다.
+정형화된 데이터 셋이 아닌 점과 선행 연구에 대한 오픈소스 프로젝트가 없는 관계로, 선행 연구와 비교한 정량적 목표 설정은 무리가 있다는 점을 인지하였다. 따라서 표본을 모집 후 만족도를 조사하여 **MOS 기법을 바탕으로 만족도를 조사**하는 것을 대체 방안으로 채택하였다. 테스터들은 구글 설문지를 통해 몇가지 문항들에 답변한 후, 메일로 알고리즘이 추천한 데이트 코스 결과를 받고 이후 다시 메일에 첨부된 만족도 조사에 답하게 된다. 만족도 조사는 알고리즘이 추천한 코스에 대한 만족도를 묻는 총 1개의 문항으로, 1점 '매우 불만족한다' 부터 시작하여 5점 '매우 만족한다까지'로 구분하여 응답을 받는다.
 
 ## Packages
 본 프로젝트에서는 다음과 같은 패키지를 활용하였다.
@@ -59,11 +59,56 @@
 ## Modeling <a id="modeling"></a>
 #### Contents Based Filtering <a id="cbf"></a>
 #### Neural Collaborative Filtering <a id="ncf"></a>
+- 모델 설명
+- 
+- 최종 모델 성능
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <table>
+        <tr>
+          <th width="10%"></th>
+          <th width="10%">F1@10</th>
+          <th width="10%">NDCG@10</th>
+          <th width="10%">Precision@10</th>
+          <th width="10%">Recall@10</th>
+          <th width="10%">Train(s)</th>
+          <th width="10%">Test(s)</th>
+        </tr>
+        <tr>
+          <th>EAT</th>
+          <td align="center">0.0149</td>
+          <td align="center">0.0313</td>
+          <td align="center">0.0097</td>
+          <td align="center">0.0540</td>
+          <td align="center">14024.7585</td>
+          <td align="center">11.2788</td>
+        </tr>
+        <tr>
+          <th>GO</th>
+          <td align="center">0.0970</td>
+          <td align="center">0.2482</td>
+          <td align="center">0.0556</td>
+          <td align="center">0.4532</td>
+          <td align="center">3795.3764</td>
+          <td align="center">2.3491</td>
+        </tr>
+        <tr>
+          <th>WATCH</th>
+          <td align="center">0.0150</td>
+          <td align="center">0.0283</td>
+          <td align="center">0.0098</td>
+          <td align="center">0.0535</td>
+          <td align="center">4831.9023</td>
+          <td align="center">1.0951</td>
+        </tr>
+    </table>
+  </body>
+</html>
 
 ## Results <a id="resultes"></a>
-* Main code, table, graph, comparison, ...
-* Web link
-
 ``` C++
 void Example(int x, int y) {
    ...  
