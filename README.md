@@ -17,23 +17,52 @@
   1. [Introduction](#introduction)
      * [Needs](#needs)
      * [Goals](#goals)
-  2. [Data Crawling](#data_crawling)
+  2. [Data crawling](#data_crawling)
      * [EAT](#data_crawling_eat)
      * [GO](#data_crawling_go)
      * [WATCH](#data_crawling_watch)
-  3. [Data Preprocessing](#data_preprocessing)
-     * [Review Translation](#review_translation)
-     * [Review Tokenizing](#review_tokenizing)
-  4. [Review Clustering](#review_clustering)
+  3. [Data preprocessing](#data_preprocessing)
+     * [Review translation](#review_translation)
+     * [Review tokenizing](#review_tokenizing)
+  4. [Review clustering](#review_clustering)
   5. [Modeling](#modeling)
-     * [Contents based filtering](#cbf)
-     * [Neural Collaborative filtering](#ncf)
+     * [Contents Based Filtering](#cbf)
+     * [Neural Collaborative Filtering](#ncf)
   6. [Result](#result)
+  7. [Conclusion](#conclusion)
+  
+## Data crawling
+#### Eat
+#### Go
+#### Watch
+
+## Data preprocessing
+#### Review translation
+#### Review tokenizing
+
+## Review clustering
+
+## Modeling
+#### Contents Based Filtering
+#### Neural Collaborative Filtering
+
+## Results
+* Main code, table, graph, comparison, ...
+* Web link
+
+``` C++
+void Example(int x, int y) {
+   ...  
+   ... // comment
+   ...
+}
+```
+
+## Conclusion
+* Summary, contribution, ...
 
 
-
-
-## Schedule
+## Project Schedule
 | Contents | March | April |  May  | June  |
 |----------|-------|-------|-------|-------|
 |  1. 데이터 수집  |       | :heavy_check_mark:      |       |       |
@@ -61,20 +90,6 @@
 * [numpy(1.18.1)](https://pypi.org/project/numpy/1.18.1/)
 
 
-## Results
-* Main code, table, graph, comparison, ...
-* Web link
-
-``` C++
-void Example(int x, int y) {
-   ...  
-   ... // comment
-   ...
-}
-```
-
-## Conclusion
-* Summary, contribution, ...
 
 ## Reports
 * Upload or link (e.g. Google Drive files with share setting)
