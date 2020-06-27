@@ -20,7 +20,7 @@
 |  5. 유저별 형용사 데이터 셋 생성  |       |       |  :heavy_check_mark:     |       |
 |  6. Contents Based Filtering(User, Item based)  |       |       |   :heavy_check_mark:    |       |
 |  7. Neural Collaborative Filtering  |       |       |    :heavy_check_mark:   |       |
-|  8. 1차 최종 알고리즘 모델링  |       |       |  ::heavy_check_mark:     |       |
+|  8. 1차 최종 알고리즘 모델링  |       |       |  :heavy_check_mark:     |       |
 |  9. 최종 알고리즘 모델링  |       |       |       |   :heavy_check_mark:    |
 |  10. 테스트용 구글 폼 제작  |       |       |       |  :heavy_check_mark:     |
 |  11. 표본을 대상으로 만족도 조사 시행  |       |       |       |  :heavy_check_mark:     |
