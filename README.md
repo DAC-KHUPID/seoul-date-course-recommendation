@@ -26,16 +26,16 @@
 |  11. 표본을 대상으로 만족도 조사 시행  |       |       |       |  :heavy_check_mark:     |
 
 ## Packages
-* [tensorflow(1.15.2)] (https://github.com/tensorflow/docs/tree/r1.5/site/en/api_docs)
-* [scikit-learn (0.22.1)] (https://pypi.org/project/scikit-learn/0.22.1/)
-* [cornac(1.6.1)] (https://pypi.org/project/cornac/)
-* [pypapago] (https://github.com/Beomi/pypapago)
-* [nltk(3.4.5)] (https://pypi.org/project/nltk/3.4.5/)
-* [gensim(3.8.3)] (https://pypi.org/project/gensim/3.8.3/)
-* [pandas (1.0.1)] (https://pypi.org/project/pandas/1.0.1/)
-* [beautifulsoup(4.8.2)] (https://pypi.org/project/beautifulsoup4/4.8.2/)
-* [selenium(3.141.0)] (https://pypi.org/project/selenium/3.141.0/)
-* [numpy(1.18.1)] (https://pypi.org/project/numpy/1.18.1/)
+* tensorflow(1.15.2) https://github.com/tensorflow/docs/tree/r1.5/site/en/api_docs)
+* scikit-learn(0.22.1) (https://pypi.org/project/scikit-learn/0.22.1/)
+* cornac(1.6.1) (https://pypi.org/project/cornac/)
+* pypapago (https://github.com/Beomi/pypapago)
+* nltk(3.4.5) (https://pypi.org/project/nltk/3.4.5/)
+* gensim(3.8.3) (https://pypi.org/project/gensim/3.8.3/)
+* pandas (1.0.1) (https://pypi.org/project/pandas/1.0.1/)
+* beautifulsoup(4.8.2) (https://pypi.org/project/beautifulsoup4/4.8.2/)
+* selenium(3.141.0) (https://pypi.org/project/selenium/3.141.0/)
+* numpy(1.18.1) (https://pypi.org/project/numpy/1.18.1/)
 
 
 ## Results
