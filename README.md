@@ -96,10 +96,10 @@ Word2Vec을 사용하여 앞선 tokenizing 단계에서 추출해낸 형용사�
 ### Contents Based Filtering <a id="cbf"></a>
 
 <div align="center">
-<figure width="40%">
-<img alt="user_matrix" src="https://user-images.githubusercontent.com/44253680/85939334-6ff36b00-b94f-11ea-8563-4659d3bb8f1f.png"><figcaption align='center'>user matrix example</figcaption>
-<figure  width="40%" >
-<img alt="item_matrix" src="https://user-images.githubusercontent.com/44253680/85939365-c5c81300-b94f-11ea-8e37-0f6ca81a8a37.png"><figcaption align='center'>item matrix example</figcaption>
+<figure>
+<img width="40%" alt="user_matrix" src="https://user-images.githubusercontent.com/44253680/85939334-6ff36b00-b94f-11ea-8563-4659d3bb8f1f.png"><figcaption align='center'>user matrix example</figcaption>
+<figure>
+<img width="40%" alt="item_matrix" src="https://user-images.githubusercontent.com/44253680/85939365-c5c81300-b94f-11ea-8e37-0f6ca81a8a37.png"><figcaption align='center'>item matrix example</figcaption>
 <figure>
   </div>
 
