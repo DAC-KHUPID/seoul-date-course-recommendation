@@ -49,6 +49,15 @@
 ## Data crawling <a id="data_crawling"></a>
 데이터 크롤링은 각각 맛집/카페(이하 EAT), 데이트 명소(이하 GO), 영화(이하 WATCH)로 구분하여 카테고리별로 진행하였으며 각 카테고리별로 크롤링을 위해 이용한 플랫폼은 아래와 같다.
 ### Eat <a id="data_crawling_eat"></a>
+<div align="center">
+<img width="30%" alt="mango_plate" src="https://user-images.githubusercontent.com/44253680/85938695-82b77100-b94a-11ea-9aec-401525f01dd8.png">
+<img width="30%" alt="dining_code" src="https://user-images.githubusercontent.com/44253680/85938715-a67ab700-b94a-11ea-9b5c-6cb9ced5d8c3.png">
+</div>  
+
+- 망고 플레이트 (장소 및 리뷰 데이터)
+- 다이닝 코드  (장소 및 리뷰 데이터)
+
+
 ### Go <a id="data_crawling_go"></a>
 <div align="center">
 <img width="30%" alt="korea_tour" src="https://user-images.githubusercontent.com/44253680/85938558-56e7bb80-b949-11ea-871a-1b4869dad067.png">
@@ -56,11 +65,19 @@
 <img width="30%" alt="kakao_map" src="https://user-images.githubusercontent.com/44253680/85938531-230c9600-b949-11ea-82ee-b8b27d4bfffb.png">
 </div>  
 
-- 대한민국 구석구석
-- TripAdvisor
-- 카카오맵
+- 대한민국 구석구석 (장소 정보 데이터)
+- TripAdvisor (대한민국 구석구석에서 수집한 장소에 대한 리뷰 데이터)
+- 카카오맵 (장소 및 리뷰 데이터)
 
 ### Watch <a id="data_crawling_watch"></a>
+<div align="center">
+<img width="30%" alt="watcha_play" src="https://user-images.githubusercontent.com/44253680/85938601-ceb5e600-b949-11ea-9fde-3a2b65c38dd5.png">
+<img width="34%" alt="naver_movie" src="https://user-images.githubusercontent.com/44253680/85938631-0886ec80-b94a-11ea-83d2-b7a688086cd3.png">
+</div>  
+
+- 왓챠 플레이 
+- 네이버 영화
+
 
 ## Data preprocessing <a id="data_preprocessing"></a>
 ### Review translation <a id="review_translation"></a>
