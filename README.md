@@ -59,8 +59,12 @@
 ## Modeling <a id="modeling"></a>
 #### Contents Based Filtering <a id="cbf"></a>
 #### Neural Collaborative Filtering <a id="ncf"></a>
+<div align="center">
+<img width="400" alt="NCF_flowchart" src="https://user-images.githubusercontent.com/44253680/85937582-cd7fbb80-b93f-11ea-8baf-52ad96c0244e.png">
+</div>
 - 모델 설명
-- 
+&nbsp;&nbsp;&nbsp;&nbsp;NCF는 기존의 collaborative filtering 기법과는 달리 DNN 적용을 통해 implicit feedback을 사용하기 위함으로, 크게 ‘GMF(Generalized Matrix Factorization)’과 ‘MLP(Multi-Layer Perceptron)’파트로 나뉘어져 있다.    
+&nbsp;&nbsp;&nbsp;&nbsp;본 프로젝트에서는 PreferredAI에서 개발한 corncac 패키지를 이용해 구.   
 - 최종 모델 성능
 <html lang="ko">
   <head>
@@ -118,7 +122,7 @@ void Example(int x, int y) {
 ```
 
 ## Conclusion <a id="conclusion"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;이번 프로젝트에서는 서울 내의 맛집/카페, 데이트 명소, 영화를 모두 포함한 데이트 코스 추천 알고리즘을 기획하고 개발하였다. 단일 장소에 대한 추천을 넘어 각 장소들을 조합하여(필터링 등) 데이트 코스로 추천해주었다는 점에 의의가 있으며 위와 같은 결과를 도출하기 위해 어떤 추천 알고리즘을 사용해야 이 주제에서 가장 적합한 추천을 할 수 있을지에 대한 고민을 통해 다양한 추천 알고리즘의 특성 및 활용 방법을 익힐 수 있었다. 또한 최종 추천을 위해 사용되는 자연어 처리/형용사 추출, 형용사 embedding, vector clustering/clustering distance, data normalization, vector 유사도 측정에 대해서도 각각 어떤 방법론들이 있고 어떤 상황에서 사용해야 하는지 등을 찾아보면서 진행했다. 분석에 적합한 방법들에 대해 성능 평가를 동시에 진행하며 최종적인 알고리즘을 완성할 수 있었다.
+&nbsp;&nbsp;&nbsp;&nbsp;이번 프로젝트에서는 서울 내의 맛집/카페, 데이트 명소, 영화를 모두 포함한 데이트 코스 추천 알고리즘을 기획하고 개발하였다. 단일 장소에 대한 추천을 넘어 각 장소들을 조합하여(필터링 등) 데이트 코스로 추천해주었다는 점에 의의가 있으며 위와 같은 결과를 도출하기 위해 어떤 추천 알고리즘을 사용해야 이 주제에서 가장 적합한 추천을 할 수 있을지에 대한 고민을 통해 다양한 추천 알고리즘의 특성 및 활용 방법을 익힐 수 있었다. 또한 최종 추천을 위해 사용되는 자연어 처리/형용사 추출, 형용사 embedding, vector clustering/clustering distance, data normalization, vector 유사도 측정에 대해서도 각각 어떤 방법론들이 있고 어떤 상황에서 사용해야 하는지 등을 찾아보면서 진행했다. 분석에 적합한 방법들에 대해 성능 평가를 동시에 진행하며 최종적인 알고리즘을 완성할 수 있었다.   
 &nbsp;&nbsp;&nbsp;&nbsp;결과적으로 이번 프로젝트를 통해 추천 시스템의 A-Z를 직접 구현해봄으로써 추천 알고리즘이 어떻게 동작하는지 잘 이해할 수 있었다. 다만, 적용한 추천 알고리즘의 논문이나 내부 로직을 100% 이해하지 못했다는 아쉬움이 있으며, 더 세부적인 논문 이해를 통해 모델링을 정교화한다면 더 좋은 결과를 도출할 수도 있을 것이라 생각하였다.
 
 
