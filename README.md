@@ -42,6 +42,7 @@
   5. [Modeling](#modeling)
      * [Contents Based Filtering](#cbf)
      * [Neural Collaborative Filtering](#ncf)
+     * [Hybird Method](#hybrid_method)
   6. [Results](#results)
   7. [Conclusion](#conclusion)
   
@@ -58,14 +59,61 @@
 
 ## Modeling <a id="modeling"></a>
 #### Contents Based Filtering <a id="cbf"></a>
+
+
 #### Neural Collaborative Filtering <a id="ncf"></a>
+
+
 <div align="center">
 <img width="400" alt="NCF_flowchart" src="https://user-images.githubusercontent.com/44253680/85937582-cd7fbb80-b93f-11ea-8baf-52ad96c0244e.png">
 </div>
-- 모델 설명
+
+
+- 모델 설명   
 &nbsp;&nbsp;&nbsp;&nbsp;NCF는 기존의 collaborative filtering 기법과는 달리 DNN 적용을 통해 implicit feedback을 사용하기 위함으로, 크게 ‘GMF(Generalized Matrix Factorization)’과 ‘MLP(Multi-Layer Perceptron)’파트로 나뉘어져 있다.    
-&nbsp;&nbsp;&nbsp;&nbsp;본 프로젝트에서는 PreferredAI에서 개발한 corncac 패키지를 이용해 구.   
-- 최종 모델 성능
+&nbsp;&nbsp;&nbsp;&nbsp;본 프로젝트에서는 PreferredAI에서 개발한 corncac 패키지를 이용해 NCF 모델을 구현하였다. 모델에 들어가는 input은 [(userID, ItemID, rating), …]과 같이 유저가 각 아이템에 남긴 평점이 튜플형으로 묶여있는 값들이 들어간 리스트이며, output으로는 유저가 경험하지 않은 다른 아이템들에 대해서 추후에 해당 아이템을 소비할 가능성을 0부터 1사이의 수로 예측한 값이다.
+
+- FineTuning   
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <table>
+        <tr>
+          <th width="10%"></th>
+          <th width="10%">batch size</th>
+          <th width="10%">learning rate</th>
+          <th width="10%">number of epochs</th>
+          <th width="10%">number of factors</th>
+        </tr>
+        <tr>
+          <th>EAT</th>
+          <td align="center">512</td>
+          <td align="center">0.0057864483</td>
+          <td align="center">50</td>
+          <td align="center">8</td>
+        </tr>
+        <tr>
+          <th>GO</th>
+          <td align="center">512</td>
+          <td align="center">0.0022595564</td>
+          <td align="center">50</td>
+          <td align="center">4</td>
+        </tr>
+        <tr>
+          <th>WATCH</th>
+          <td align="center">128</td>
+          <td align="center">0.0075019904</td>
+          <td align="center">100</td>
+          <td align="center">8</td>
+        </tr>
+    </table>
+  </body>
+</html>
+
+NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stopping기법과 이때 patience값을 5로 주어 분야별 최적 파라미터를 위의 표와 같이 구하게 되었다.  
+- 최종 모델 성능   
 <html lang="ko">
   <head>
     <meta charset="utf-8">
