@@ -67,6 +67,14 @@
 
 #### Contents Based Filtering <a id="cbf"></a>
 
+<div align="center">
+<img width="400" alt="NCF_flowchart" src="https://user-images.githubusercontent.com/44253680/85937582-cd7fbb80-b93f-11ea-8baf-52ad96c0244e.png">
+</div>
+
+<div align="center">
+<img width="400" alt="NCF_flowchart" src="https://user-images.githubusercontent.com/44253680/85937582-cd7fbb80-b93f-11ea-8baf-52ad96c0244e.png">
+</div>
+
 - **모델 설명**   
 위에서 생성한 matrix를 통해 각 user row와 각 item row를 vector로 보고 두 vector의 유사도를 구하는 방식으로 CBF score를 도출했다. 여기서 vector size는 각 분야별 word cluster의 개수 이다. 유사도를 구하는 방법으로는 가장 많이 쓰이는 cosine similarity를 이용했다.   
 
@@ -122,8 +130,6 @@ NCF는 기존의 collaborative filtering 기법과는 달리 DNN 적용을 통�
 </html>
 
 NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stopping기법과 이때 patience값을 5로 주어 분야별 최적 파라미터를 위의 표와 같이 구하게 되었다.  
-#### Hybird Method <a id="hybird_method"></a>
-
 - **최종 모델 성능**   
 <html lang="ko">
   <head>
@@ -171,14 +177,43 @@ NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stop
   </body>
 </html>
 
+#### Hybird Method <a id="hybird_method"></a>
+
+
 ## Results <a id="resultes"></a>
-``` C++
-void Example(int x, int y) {
-   ...  
-   ... // comment
-   ...
-}
+<div align="center">
+<img width="400" alt="Result" src="https://user-images.githubusercontent.com/44253680/85938055-78927400-b944-11ea-9fa5-3b33a4b7b449.png">
+</div>
+
+``` python
+def main():
+    u_id = input('Enter User ID: ')
+    go = Go_recommendation(u_id)
+    eat = Eat_recommendation(u_id)
+    watch = Watch_recommendation(u_id)
+    result = Search_Recommendable_Places(eat, go, u_id)
+    if len(result) == 2:
+        eat_result = result[0]
+        go_result = result[1]
+        print(f'{u_id}님께 추천드릴 맛집은 {eat_result["district"]}에 위치한 {eat_result["name"]}입니다.')
+        print(f'{u_id}님께 추천드릴 데이트 장소는 {go_result["district"]}에 위치한 {go_result["p_name"]}입니다.')
+
+    elif len(result) == 4:
+        eat_result1 = result[0]
+        go_result1 = result[1]
+        eat_result2 = result[2]
+        go_result2 = result[3]
+        print(f'{u_id}님! {eat_result1["district"]}에서의 데이트를 계획하고 계신가요?')
+        print(f'{u_id}님께 추천드릴 맛집은 {eat_result1["district"]}에 위치한 {eat_result1["name"]}입니다.')
+        print(f'{u_id}님께 추천드릴 데이트 장소는 {go_result1["district"]}에 위치한 {go_result1["p_name"]}입니다.')
+        print(f'혹시나! {eat_result2["district"]}에서의 데이트를 계획하고 계신다면?')
+        print(f'맛집으로는 {eat_result2["district"]}에 위치한 {eat_result2["name"]}와 ')
+        print(f'데이트 장소로는 {go_result2["district"]}에 위치한 {go_result2["p_name"]}을(를) 추천드려요.')
+        
+    print(f'영화가 끌리는 데이트라면 현재 상영중인 영화 {watch}은(는) 어떠신가요?')
 ```
+
+최종적으로는 UserID를 인풋으로 입력하면 추천할만한 데이트 코스를 두가지 추천해주는 것으로 알고리즘이 종료된다.
 
 ## Conclusion <a id="conclusion"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;이번 프로젝트에서는 서울 내의 맛집/카페, 데이트 명소, 영화를 모두 포함한 데이트 코스 추천 알고리즘을 기획하고 개발하였다. 단일 장소에 대한 추천을 넘어 각 장소들을 조합하여(필터링 등) 데이트 코스로 추천해주었다는 점에 의의가 있으며 위와 같은 결과를 도출하기 위해 어떤 추천 알고리즘을 사용해야 이 주제에서 가장 적합한 추천을 할 수 있을지에 대한 고민을 통해 다양한 추천 알고리즘의 특성 및 활용 방법을 익힐 수 있었다. 또한 최종 추천을 위해 사용되는 자연어 처리/형용사 추출, 형용사 embedding, vector clustering/clustering distance, data normalization, vector 유사도 측정에 대해서도 각각 어떤 방법론들이 있고 어떤 상황에서 사용해야 하는지 등을 찾아보면서 진행했다. 분석에 적합한 방법들에 대해 성능 평가를 동시에 진행하며 최종적인 알고리즘을 완성할 수 있었다.   
