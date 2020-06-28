@@ -104,7 +104,10 @@ Word2Vec을 사용하여 앞선 tokenizing 단계에서 추출해낸 형용사�
 </div>
 
 - **모델 설명**   
-위에서 생성한 matrix를 통해 각 user row와 각 item row를 vector로 보고 두 vector의 유사도를 구하는 방식으로 CBF score를 도출했다. 여기서 vector size는 각 분야별 word cluster의 개수 이다. 유사도를 구하는 방법으로는 가장 많이 쓰이는 cosine similarity를 이용했다.   
+위에서 생성한 matrix를 통해 각 user row와 각 item row를 vector로 보고 두 vector의 유사도를 구하는 방식으로 CBF score를 도출했다. 여기서 vector size는 각 분야별 word cluster의 개수 이다. 유사도를 구하는 방법으로는 가장 많이 쓰이는 cosine similarity를 이용했다. 각 카테고리별 User, Item Matrix는 아래 링크된 파일을 통해 볼 수 있다.
+   * EAT:  [User Matrix](source/Eat/data/normalized_user_matrix.csv) / [Item Matrix](source/Eat/data/normalized_item_matrix.csv) 
+   * GO:  [User Matrix](source/Go/data/normalized_user_matrix.csv) / [Item Matrix](source/Go/data/normalized_item_matrix.csv)   
+   * WATCH:  [User Matrix](source/Watch/data/normalized_user_matrix.csv) / [Item Matrix](source/Watch/data/normalized_item_matrix.csv) 
 
 ### Neural Collaborative Filtering <a id="ncf"></a>
 
@@ -157,7 +160,7 @@ NCF는 기존의 collaborative filtering 기법과는 달리 DNN 적용을 통�
   </body>
 </html>
 
-NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stopping기법과 이때 patience값을 5로 주어 분야별 최적 파라미터를 위의 표와 같이 구하게 되었다.  
+NCF모델의 hyper parameter는 Random Search를 이용해 구했고, **early stopping기법 patience값을 5**로 주어 분야별 최적 파라미터를 위의 표와 같이 구하게 되었다.  
 - **최종 모델 성능**   
 <html lang="ko">
   <head>
@@ -204,6 +207,8 @@ NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stop
     </table>
   </body>
 </html>
+
+**참고한 논문에**서는 NDCG@10가 평균적으로 약 0.43 정도였으며 **마이크로소프트가 NCF 논문을 재구성한 라이브러리 예시로 제시한 결과 값**에서는 NDCG@10가 0.198938였다는 점을 고려했을때 **GO**의 경우 논문보다는 낮고 라이브러리 예시보다는 높은 점수를, **EAT과 WATCH**는 전체적으로 모델 자체의 성능이 낮았다는 아쉬움이 남는다. 위와 같은 결과에 대한 원인으로 EAT과 WATCH에서는 **리뷰의 갯수가 적은 유저가 많기 때문인 것으로 예상**하였다. 이와 같은 한계점은 직접 플랫폼을 운영하는 서비스가 구축되어 데이터 문제가 해결된다면, 어느정도 극복할 수 있을 것이라 예상된다.
 
 ### Hybird Method <a id="hybird_method"></a>
 
