@@ -96,11 +96,12 @@ Word2Vec을 사용하여 앞선 tokenizing 단계에서 추출해낸 형용사�
 ### Contents Based Filtering <a id="cbf"></a>
 
 <div align="center">
-<figure width="30%">
-<img width="30%" alt="user_matrix" src="https://user-images.githubusercontent.com/44253680/85939334-6ff36b00-b94f-11ea-8563-4659d3bb8f1f.png"><figcaption align='center'>user matrix example</figcaption>
-<figure  width="30%" >
-<img width="30%" alt="item_matrix" src="https://user-images.githubusercontent.com/44253680/85939365-c5c81300-b94f-11ea-8e37-0f6ca81a8a37.png"><figcaption align='center'>item matrix example</figcaption>
+<figure width="40%">
+<img alt="user_matrix" src="https://user-images.githubusercontent.com/44253680/85939334-6ff36b00-b94f-11ea-8563-4659d3bb8f1f.png"><figcaption align='center'>user matrix example</figcaption>
+<figure  width="40%" >
+<img alt="item_matrix" src="https://user-images.githubusercontent.com/44253680/85939365-c5c81300-b94f-11ea-8e37-0f6ca81a8a37.png"><figcaption align='center'>item matrix example</figcaption>
 <figure>
+  </div>
 
 - **모델 설명**   
 위에서 생성한 matrix를 통해 각 user row와 각 item row를 vector로 보고 두 vector의 유사도를 구하는 방식으로 CBF score를 도출했다. 여기서 vector size는 각 분야별 word cluster의 개수 이다. 유사도를 구하는 방법으로는 가장 많이 쓰이는 cosine similarity를 이용했다. 각 카테고리별 User, Item Matrix는 아래 링크된 파일을 통해 볼 수 있다.
