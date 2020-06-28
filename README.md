@@ -4,10 +4,10 @@
 </div>  
 
 ## Introduction <a id="introduction"></a>
-#### Needs  <a id="needs"></a> 
+### Needs  <a id="needs"></a> 
 &nbsp;&nbsp;&nbsp;&nbsp;빅데이터 기반의 추천 시스템은 오래 전부터 연구되어왔고, 유튜브, 넷플릭스, 왓챠 등 미디어 플랫폼과 인터넷 쇼핑몰에서 좋은 성능을 발휘했으나, 현재 시장에 출시된 데이트 명소를 추천해주는 애플리케이션은 수요가 높음에도 불구하고 빅데이터 기반의 추천 알고리즘을 사용하지 않고 있음을 발견했다. 따라서 본 프로젝트에서는 **머신러닝을 통해 사용자의 취향을 분석**하고 이를 통해 **데이트 코스를 추천해주는 알고리즘을 개발**한다. 이 알고리즘은 **데이트 코스를 결정하는 데에 어려움을 겪었던 커플들에게 도움**을 줄 것이며, **랜덤 데이트 코스라는 재미 요소**도 줄 수 있을 것이다.
 
-#### Goals <a id="goals"></a>
+### Goals <a id="goals"></a>
 - 정성적 목표   
 이 프로젝트의 **최종 결과물은 데이트 취향과 위치를 고려한 데이트 코스 추천 알고리즘**이며 데이트 코스에는 사용자의 취향에 맞춘 맛집/카페, 데이트 명소(유명 방문지, 보드게임 카페, 볼링장, 방탈출 카페 등등), 영화가 포함되어 있다. 또한 데이트를 하고자 하는 지역구를 선택한다면, 이에 대한 **코스 필터링 기능을 제공**하는 것 또한 최종 결과물에 포함되도록 한다.
 
@@ -47,16 +47,16 @@
   7. [Conclusion](#conclusion)
   
 ## Data crawling <a id="data_crawling"></a>
-#### Eat <a id="data_crawling_eat"></a>
-#### Go <a id="data_crawling_go"></a>
+### Eat <a id="data_crawling_eat"></a>
+### Go <a id="data_crawling_go"></a>
 - 대한민국 구석구석
 - TripAdvisor
 - 카카오맵
-#### Watch <a id="data_crawling_watch"></a>
+### Watch <a id="data_crawling_watch"></a>
 
 ## Data preprocessing <a id="data_preprocessing"></a>
-#### Review translation <a id="review_translation"></a>
-#### Review tokenizing <a id="review_tokenizing"></a>
+### Review translation <a id="review_translation"></a>
+### Review tokenizing <a id="review_tokenizing"></a>
 
 ## Review clustering <a id="review_clustering"></a>
 
@@ -65,7 +65,7 @@
 ## Modeling <a id="modeling"></a>
 
 
-#### Contents Based Filtering <a id="cbf"></a>
+### Contents Based Filtering <a id="cbf"></a>
 
 <div align="center">
 <img width="400" alt="NCF_flowchart" src="https://user-images.githubusercontent.com/44253680/85937582-cd7fbb80-b93f-11ea-8baf-52ad96c0244e.png">
@@ -78,7 +78,7 @@
 - **모델 설명**   
 위에서 생성한 matrix를 통해 각 user row와 각 item row를 vector로 보고 두 vector의 유사도를 구하는 방식으로 CBF score를 도출했다. 여기서 vector size는 각 분야별 word cluster의 개수 이다. 유사도를 구하는 방법으로는 가장 많이 쓰이는 cosine similarity를 이용했다.   
 
-#### Neural Collaborative Filtering <a id="ncf"></a>
+### Neural Collaborative Filtering <a id="ncf"></a>
 
 
 <div align="center">
@@ -177,7 +177,7 @@ NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stop
   </body>
 </html>
 
-#### Hybird Method <a id="hybird_method"></a>
+### Hybird Method <a id="hybird_method"></a>
 
 
 ## Results <a id="resultes"></a>
@@ -244,7 +244,7 @@ def main():
 * [Final Report](Reports/Final.pdf)
 * [Demo video](Reports/Demo.mp4)
 
-### Contributors
+## Contributors
 
 * [김동혁 (경희대학교 산업경영공학과)](https://github.com/LoveDH)
 * [류연주 (경희대학교 관광학과)](https://github.com/YeonjuRyu)
