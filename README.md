@@ -49,6 +49,9 @@
 ## Data crawling <a id="data_crawling"></a>
 #### Eat <a id="data_crawling_eat"></a>
 #### Go <a id="data_crawling_go"></a>
+- 대한민국 구석구석
+- TripAdvisor
+- 카카오맵
 #### Watch <a id="data_crawling_watch"></a>
 
 ## Data preprocessing <a id="data_preprocessing"></a>
@@ -57,9 +60,15 @@
 
 ## Review clustering <a id="review_clustering"></a>
 
+
+
 ## Modeling <a id="modeling"></a>
+
+
 #### Contents Based Filtering <a id="cbf"></a>
 
+- **모델 설명**   
+위에서 생성한 matrix를 통해 각 user row와 각 item row를 vector로 보고 두 vector의 유사도를 구하는 방식으로 CBF score를 도출했다. 여기서 vector size는 각 분야별 word cluster의 개수 이다. 유사도를 구하는 방법으로는 가장 많이 쓰이는 cosine similarity를 이용했다.   
 
 #### Neural Collaborative Filtering <a id="ncf"></a>
 
@@ -69,11 +78,11 @@
 </div>
 
 
-- 모델 설명   
-&nbsp;&nbsp;&nbsp;&nbsp;NCF는 기존의 collaborative filtering 기법과는 달리 DNN 적용을 통해 implicit feedback을 사용하기 위함으로, 크게 ‘GMF(Generalized Matrix Factorization)’과 ‘MLP(Multi-Layer Perceptron)’파트로 나뉘어져 있다.    
-&nbsp;&nbsp;&nbsp;&nbsp;본 프로젝트에서는 PreferredAI에서 개발한 corncac 패키지를 이용해 NCF 모델을 구현하였다. 모델에 들어가는 input은 [(userID, ItemID, rating), …]과 같이 유저가 각 아이템에 남긴 평점이 튜플형으로 묶여있는 값들이 들어간 리스트이며, output으로는 유저가 경험하지 않은 다른 아이템들에 대해서 추후에 해당 아이템을 소비할 가능성을 0부터 1사이의 수로 예측한 값이다.
+- **모델 설명**   
+NCF는 기존의 collaborative filtering 기법과는 달리 DNN 적용을 통해 implicit feedback을 사용하기 위함으로, 크게 ‘GMF(Generalized Matrix Factorization)’과 ‘MLP(Multi-Layer Perceptron)’파트로 나뉘어져 있다.    
+본 프로젝트에서는 PreferredAI에서 개발한 corncac 패키지를 이용해 NCF 모델을 구현하였다. 모델에 들어가는 input은 [(userID, ItemID, rating), …]과 같이 유저가 각 아이템에 남긴 평점이 튜플형으로 묶여있는 값들이 들어간 리스트이며, output으로는 유저가 경험하지 않은 다른 아이템들에 대해서 추후에 해당 아이템을 소비할 가능성을 0부터 1사이의 수로 예측한 값이다.
 
-- FineTuning   
+- **FineTuning**   
 <html lang="ko">
   <head>
     <meta charset="utf-8">
@@ -113,7 +122,9 @@
 </html>
 
 NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stopping기법과 이때 patience값을 5로 주어 분야별 최적 파라미터를 위의 표와 같이 구하게 되었다.  
-- 최종 모델 성능   
+#### Hybird Method <a id="hybird_method"></a>
+
+- **최종 모델 성능**   
 <html lang="ko">
   <head>
     <meta charset="utf-8">
