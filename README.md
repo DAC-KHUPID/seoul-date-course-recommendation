@@ -213,6 +213,12 @@ NCF모델의 hyper parameter는 Random Search를 이용해 구했고, **early st
 **참고한 논문에**서는 NDCG@10가 평균적으로 약 0.43 정도였으며 **마이크로소프트가 NCF 논문을 재구성한 라이브러리 예시로 제시한 결과 값**에서는 NDCG@10가 0.198938였다는 점을 고려했을때 **GO**의 경우 논문보다는 낮고 라이브러리 예시보다는 높은 점수를, **EAT과 WATCH**는 전체적으로 모델 자체의 성능이 낮았다는 아쉬움이 남는다. 위와 같은 결과에 대한 원인으로 EAT과 WATCH에서는 **리뷰의 갯수가 적은 유저가 많기 때문인 것으로 예상**하였다. 이와 같은 한계점은 직접 플랫폼을 운영하는 서비스가 구축되어 데이터 문제가 해결된다면, 어느정도 극복할 수 있을 것이라 예상된다.
 
 ### Hybird Method <a id="hybird_method"></a>
+<div align="center">
+<img width="727" alt="hybrid" src="https://user-images.githubusercontent.com/44253680/85939510-18ee9580-b951-11ea-8712-e11b20ded490.png">
+</div>
+CBF 모델과 NCF 모델의 결과값을 결합하는 방식으로 최종 prediction score를 도출한다. 이때 최종 score는 두 모델의 score를 단순 곱하는 식으로 사용했다.   
+이때 결합 방식을 산술평균, 조화평균으로도 생각해보았지만 이는 다른 한 모델이 낮게 예측한 item을 추천해주는 상황을 야기했다. 따라서 단순 곱을 통해 두 모델이 모두 높은 점수를 낸 item을 추천하도록 했다.
+
 
 
 ## Results <a id="resultes"></a>
