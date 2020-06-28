@@ -82,10 +82,12 @@
 ## Data preprocessing <a id="data_preprocessing"></a>
 ### Review translation <a id="review_translation"></a>
 ### Review tokenizing <a id="review_tokenizing"></a>
-
+NLTK 라이브러리를 사용하여 리뷰 문장에서 형용사들을 추출하고
 ## Review clustering <a id="review_clustering"></a>
-
-
+Word2Vec을 사용하여 앞선 tokenizing 단계에서 추출해낸 형용사를 300차원의 벡터로 변형한 후, K-means 알고리즘을 사용해 클러스터링 작업을 수행했다.
+- [EAT review word cluster](source/Eat/data/eat_cluster.csv)
+- [GO review word cluster](source/Go/data/Go_adj_clustered.csv
+- [WATCH review word cluster](source/Watch/data/adj_cluster.csv
 
 ## Modeling <a id="modeling"></a>
 
