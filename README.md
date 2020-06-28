@@ -47,11 +47,19 @@
   7. [Conclusion](#conclusion)
   
 ## Data crawling <a id="data_crawling"></a>
+데이터 크롤링은 각각 맛집/카페(이하 EAT), 데이트 명소(이하 GO), 영화(이하 WATCH)로 구분하여 카테고리별로 진행하였으며 각 카테고리별로 크롤링을 위해 이용한 플랫폼은 아래와 같다.
 ### Eat <a id="data_crawling_eat"></a>
 ### Go <a id="data_crawling_go"></a>
+<div align="center">
+<img width="30%" alt="korea_tour" src="https://user-images.githubusercontent.com/44253680/85938558-56e7bb80-b949-11ea-871a-1b4869dad067.png">
+<img width="30%" alt="trip_advisor" src="https://user-images.githubusercontent.com/44253680/85938510-03756d80-b949-11ea-99b5-d0bbc32711bf.png">
+<img width="30%" alt="kakao_map" src="https://user-images.githubusercontent.com/44253680/85938531-230c9600-b949-11ea-82ee-b8b27d4bfffb.png">
+</div>  
+
 - 대한민국 구석구석
 - TripAdvisor
 - 카카오맵
+
 ### Watch <a id="data_crawling_watch"></a>
 
 ## Data preprocessing <a id="data_preprocessing"></a>
@@ -185,7 +193,7 @@ NCF모델의 hyper parameter는 Random Search를 이용해 구했고, early stop
 <img width="400" alt="Result" src="https://user-images.githubusercontent.com/44253680/85938055-78927400-b944-11ea-9fa5-3b33a4b7b449.png">
 </div>
 
-최종적으로는 UserID를 인풋으로 입력하면 추천할만한 데이트 코스를 두가지 추천해주는 것으로 알고리즘이 종료된다.
+최종적으로는 UserID를 인풋으로 입력하면 추천할만한 데이트 코스를 두가지 추천해주는 것으로 알고리즘이 종료된다.   
 
 - code   
 
