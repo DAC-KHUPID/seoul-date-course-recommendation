@@ -51,7 +51,7 @@
 ### Eat <a id="data_crawling_eat"></a>
 <div align="center">
 <img width="30%" alt="mango_plate" src="https://user-images.githubusercontent.com/44253680/85938695-82b77100-b94a-11ea-9aec-401525f01dd8.png">
-<img width="30%" alt="dining_code" src="https://user-images.githubusercontent.com/44253680/85938715-a67ab700-b94a-11ea-9b5c-6cb9ced5d8c3.png">
+<img width="31.5%" alt="dining_code" src="https://user-images.githubusercontent.com/44253680/85938715-a67ab700-b94a-11ea-9b5c-6cb9ced5d8c3.png">
 </div>  
 
 - 망고 플레이트 (장소 및 리뷰 데이터)
@@ -61,7 +61,7 @@
 ### Go <a id="data_crawling_go"></a>
 <div align="center">
 <img width="30%" alt="korea_tour" src="https://user-images.githubusercontent.com/44253680/85938558-56e7bb80-b949-11ea-871a-1b4869dad067.png">
-<img width="30%" alt="trip_advisor" src="https://user-images.githubusercontent.com/44253680/85938510-03756d80-b949-11ea-99b5-d0bbc32711bf.png">
+<img width="32%" alt="trip_advisor" src="https://user-images.githubusercontent.com/44253680/85938510-03756d80-b949-11ea-99b5-d0bbc32711bf.png">
 <img width="30%" alt="kakao_map" src="https://user-images.githubusercontent.com/44253680/85938531-230c9600-b949-11ea-82ee-b8b27d4bfffb.png">
 </div>  
 
