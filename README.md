@@ -279,6 +279,10 @@ def main():
 |  10. 테스트용 구글 폼 제작  |       |       |       |  :heavy_check_mark:     |
 |  11. 표본을 대상으로 만족도 조사 시행  |       |       |       |  :heavy_check_mark:     |
 
+## References
+* Florian Strub 외 2인. [「Hybrid Recommender System based on Autoencoders」](https://arxiv.org/abs/1606.07659v3). 2016
+* Xiangana He 외 5인. [「Neural Collaborative Filtering」](https://arxiv.org/abs/1708.05031). 2017
+* Maxim Naumov 외 23인. [「Deep Learning Recommendation Model for Personalization and Recommendation Systems」](https://arxiv.org/abs/1906.00091v1). 2019
 
 ## Reports
 * [Final Report](reports/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8(%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C_Khupid_%EC%9C%A0%EC%A0%95%EC%88%98).pdf)
