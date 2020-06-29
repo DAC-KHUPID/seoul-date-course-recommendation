@@ -282,8 +282,8 @@ def main():
 
 
 ## Reports
-* [Final Report](Reports/Final.pdf)
-* [Demo video](Reports/Demo.mp4)
+* [Final Report](reports/Final.pdf)
+* [Demo video](reports/Demo.mp4)
 
 ## Contributors
 
