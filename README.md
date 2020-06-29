@@ -297,372 +297,307 @@ def main():
 ## Roles
 
 <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
-    <col class="col0">
-    <col class="col1">
-    <col class="col2">
-    <tbody>
-      <tr class="row0">
-        <td class="column0 style1 s">주차</td>
-        <td class="column1 style2 s">이름</td>
-        <td class="column2 style3 s">추진내용</td>
-      </tr>
-      <tr class="row1">
-        <td class="column0 style4 n">2</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 1차 프로젝트 제안서(3.기대효과 및 활용방안, 4. 수행방법 일부) 작성</td>
-      </tr>
-      <tr class="row2">
-        <td class="column0 style5 n">03월 27일</td>
-        <td class="column2 style9 s">- 맛집/카페 : 수집 가능한 플랫폼 탐색</td>
-      </tr>
-      <tr class="row3">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- 1차 프로젝트 제안서(2. 과제 목표, 4. 수행방법 일부) 작성, 최종 취합</td>
-      </tr>
-      <tr class="row4">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 데이트 명소: 수집 가능한 데이터 탐색</td>
-      </tr>
-      <tr class="row5">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- 1차 프로젝트 제안서(1. 과제 개요, 4. 수행방법 일부) 작성</td>
-      </tr>
-      <tr class="row6">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 전시/영화 : 수집 가능한 데이터 탐색</td>
-      </tr>
-      <tr class="row7">
-        <td class="column0 style4 n">3</td>
-        <td class="column1 style10 s">김동혁</td>
-        <td class="column2 style9 s">- 맛집/카페 : 망고플레이트를 통해 기본 데이터 및 리뷰 수집</td>
-      </tr>
-      <tr class="row8">
-        <td class="column0 style5 n">04월 03일</td>
-        <td class="column1 style10 s">류연주</td>
-        <td class="column2 style9 s">- 데이트 명소 : 대한민국 구석구석(장소 데이터), TripAdvisor(리뷰 데이터) 크롤링 작업 시작</td>
-      </tr>
-      <tr class="row9">
-        <td class="column0 style7 null"></td>
-        <td class="column1 style10 s">유정수</td>
-        <td class="column2 style9 s">- 전시/영화 : 왓챠를 통한 영화 데이터 및 리뷰 크롤링</td>
-      </tr>
-      <tr class="row10">
-        <td class="column0 style4 n">4</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 맛집/카페 : 망고플레이트, 다이닝코드에서 데이터 크롤링</td>
-      </tr>
-      <tr class="row11">
-        <td class="column0 style5 n">04월 10일</td>
-        <td class="column2 style9 s">- clustering distance에 대한 research</td>
-      </tr>
-      <tr class="row12">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style10 s">류연주</td>
-        <td class="column2 style9 s">- 데이트 명소 : 대한민국 구석구석(장소 데이터), TripAdvisor(리뷰 데이터) 크롤링 작업 완료</td>
-      </tr>
-      <tr class="row13">
-        <td class="column0 style7 null"></td>
-        <td class="column1 style10 s">유정수</td>
-        <td class="column2 style9 s">- 전시/영화 : 왓챠, 네이버영화에서 데이터 크롤링</td>
-      </tr>
-      <tr class="row14">
-        <td class="column0 style4 n">5</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 맛집/카페 : data 부족으로 인한 추가 크롤링</td>
-      </tr>
-      <tr class="row15">
-        <td class="column0 style5 n">04월 17일</td>
-        <td class="column2 style9 s">- 맛집/카페 : okt 패키지를 이용한 한글 형태소 분석</td>
-      </tr>
-      <tr class="row16">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style10 s">류연주</td>
-        <td class="column2 style9 s">- 데이트 명소 : Kakao Map 장소/리뷰 데이터 크롤링</td>
-      </tr>
-      <tr class="row17">
-        <td class="column0 style7 null"></td>
-        <td class="column1 style10 s">유정수</td>
-        <td class="column2 style9 s">-전시/영화 : 오픈갤러리에서 전시 데이터 크롤링, 네이버 카페에서 전시 리뷰 데이터 크롤링</td>
-      </tr>
-      <tr class="row18">
-        <td class="column0 style4 n">6</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 맛집/카페 : 한글 리뷰에서 형용사 추출</td>
-      </tr>
-      <tr class="row19">
-        <td class="column0 style5 n">04월 24일</td>
-        <td class="column2 style9 s">- 한글 기반 Fast-Text로 임베딩 연구</td>
-      </tr>
-      <tr class="row20">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- 리뷰 자연어 처리를 위한 불용어 사전 구축 (한글)</td>
-      </tr>
-      <tr class="row21">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- Papago로 데이트 명소 리뷰 데이터 번역 후 tokenizing 테스트</td>
-      </tr>
-      <tr class="row22">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- 전시/영화 : 한글 리뷰에서 형용사 추출</td>
-      </tr>
-      <tr class="row23">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 단순 형용사 추출 방법과 리뷰를 중요 문장으로 요약 후 형용사 추출 방법에 대해 연구</td>
-      </tr>
-      <tr class="row24">
-        <td class="column0 style4 n">7</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- word embedding에서의 CBOW와 SKIPGRAM에 대한 research</td>
-      </tr>
-      <tr class="row25">
-        <td class="column0 style5 n">05월 01일</td>
-        <td class="column2 style9 s">- 맛집/카페: 데이터 통합 형식으로 변형</td>
-      </tr>
-      <tr class="row26">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- 데이트 명소: Kakao Map 데이터 크롤링 완료, 리뷰 및 장소 데이터를 통합 형식으로 변형</td>
-      </tr>
-      <tr class="row27">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 리뷰 자연어 처리를 Fast-Text 기법 + Papago로 변형한 리뷰데이터로 진행</td>
-      </tr>
-      <tr class="row28">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- 전시/영화 : 크롤링 완료 후 데이터 통합 형식으로 변형</td>
-      </tr>
-      <tr class="row29">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 번역하지 않은 데이터를 Fast-Text 기법을 사용해 embedding</td>
-      </tr>
-      <tr class="row30">
-        <td class="column0 style4 n">8</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 맛집/카페: 리뷰 영어로 번역</td>
-      </tr>
-      <tr class="row31">
-        <td class="column0 style5 n">05월 08일</td>
-        <td class="column2 style9 s">- GMM, Affinity Propagation, Spectral 등 clustering 적용 시도</td>
-      </tr>
-      <tr class="row32">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="3">류연주</td>
-        <td class="column2 style8 s">- 리뷰 자연어 처리 Word2Vec, BERT, ELMO, GLoVe research</td>
-      </tr>
-      <tr class="row33">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style8 s">- 데이트 명소: Word2Vec 적용 및 Fast-text와 비교</td>
-      </tr>
-      <tr class="row34">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 데이트 명소: Kmeans, DBSCAN, GMM 클러스터링 기법 적용</td>
-      </tr>
-      <tr class="row35">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="3">유정수</td>
-        <td class="column2 style8 s">- 전시/영화: 전시 리뷰 데이터 부족으로 추가 탐색</td>
-      </tr>
-      <tr class="row36">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style8 s">- 전시/영화: 한글 데이터에 대해 Word2Vec, Fast-text 적용 및 비교</td>
-      </tr>
-      <tr class="row37">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">-embedding한 vector 클러스터링 진행(K-means, K-medoids, DBSCAN)</td>
-      </tr>
-      <tr class="row38">
-        <td class="column0 style4 n">9</td>
-        <td class="column1 style10 s">김동혁</td>
-        <td class="column2 style9 s">- Collaborative Filtering에서 Matrix Factorization에 대한 research</td>
-      </tr>
-      <tr class="row39">
-        <td class="column0 style5 n">05월 15일</td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- 데이트 명소: 카카오/트립어드바이저 모든 리뷰 Papago api 사용하여 영어로 번역</td>
-      </tr>
-      <tr class="row40">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 데이트 명소: User matrix, Item matrix 생성</td>
-      </tr>
-      <tr class="row41">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- 전시/영화: Papago api를 사용하여 모든 리뷰 데이터 번역</td>
-      </tr>
-      <tr class="row42">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 전시/영화: User matrix, Item matrix 생성</td>
-      </tr>
-      <tr class="row43">
-        <td class="column0 style4 n">10</td>
-        <td class="column1 style10 s">김동혁</td>
-        <td class="column2 style9 s">- Neural Collaborative Filtering 논문에 제시된 코드 연구</td>
-      </tr>
-      <tr class="row44">
-        <td class="column0 style5 n">05월 22일</td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- 데이트 명소: 카카오/트립어드바이저 모든 리뷰 api 사용하여 영어로 번역</td>
-      </tr>
-      <tr class="row45">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 데이트 명소: User matrix, Item matrix 생성</td>
-      </tr>
-      <tr class="row46">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- NCF 논문 리뷰 및 적용 방안 제시</td>
-      </tr>
-      <tr class="row47">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 영화: User matrix, Item matrix 생성</td>
-      </tr>
-      <tr class="row48">
-        <td class="column0 style4 n">11</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 맛집/카페 : NCF 모델 적용</td>
-      </tr>
-      <tr class="row49">
-        <td class="column0 style5 n">05월 29일</td>
-        <td class="column2 style9 s">- 추천시스템 성능 평가방법 research</td>
-      </tr>
-      <tr class="row50">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- NCF모델 적용 방향 수정, Hybrid method research</td>
-      </tr>
-      <tr class="row51">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 데이트 명소: NCF 모델 적용 (Microsoft 라이브러리)</td>
-      </tr>
-      <tr class="row52">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- Hybrid method 적용 방법 연구 및 라이브러리 탐색</td>
-      </tr>
-      <tr class="row53">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 영화: Cornac 라이브러리 내부 로직 연구 및 NCF 모델 적용</td>
-      </tr>
-      <tr class="row54">
-        <td class="column0 style4 n">12</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- NCF를 이용한 라이브러리 검색 및 각 장단점 파악</td>
-      </tr>
-      <tr class="row55">
-        <td class="column0 style5 n">06월 05일</td>
-        <td class="column2 style9 s">- User Matrix * Item Matrix cosine similarity 방식 테스트</td>
-      </tr>
-      <tr class="row56">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- User Matrix * Item Matrix 단순 행렬곱 적용 방식 테스트</td>
-      </tr>
-      <tr class="row57">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- Data Normalization 방식 research</td>
-      </tr>
-      <tr class="row58">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- 벡터의 유사도 측정 방법 research</td>
-      </tr>
-      <tr class="row59">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- User Matrix * Item Matrix 단순 행렬곱 적용 방식 테스트</td>
-      </tr>
-      <tr class="row60">
-        <td class="column0 style4 n">13</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 프로젝트 Flow chart 생성</td>
-      </tr>
-      <tr class="row61">
-        <td class="column0 style5 n">06월 12일</td>
-        <td class="column2 style9 s">-  맛집/카페 : Matrix Data Normalization</td>
-      </tr>
-      <tr class="row62">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">류연주</td>
-        <td class="column2 style8 s">- 데이트 명소: 형용사 word-cluster 라벨링, 조사 문항에 넣을 20개 대표 형용사 선정</td>
-      </tr>
-      <tr class="row63">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">-  데이트 명소 : Matrix Data Normalization</td>
-      </tr>
-      <tr class="row64">
-        <td class="column0 style7 null"></td>
-        <td class="column1 style10 s">유정수</td>
-        <td class="column2 style9 s">- 영화: cosine similarity 방식으로 변경 후 Matrix Data Normalization</td>
-      </tr>
-      <tr class="row65">
-        <td class="column0 style4 n">14</td>
-        <td class="column1 style11 s style12" rowspan="3">김동혁</td>
-        <td class="column2 style8 s">- 테스터들에게 보낼 설문지 중, 1) 형용사에 대해 느끼는 호감도 정도 문항 및 3) 지역구 선택 작성</td>
-      </tr>
-      <tr class="row66">
-        <td class="column0 style5 n">06월 19일</td>
-        <td class="column2 style8 s">- 맛집/카페 : 최종 모델 완성</td>
-      </tr>
-      <tr class="row67">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- Random Search를 통한 NCF  hyper parameter tuning</td>
-      </tr>
-      <tr class="row68">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="3">류연주</td>
-        <td class="column2 style8 s">- 테스터들에게 보낼 설문지 중, 2-2) 데이트 명소 문항 작성</td>
-      </tr>
-      <tr class="row69">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style8 s">- 맛집/카페, 데이트 명소, 영화 데이터를 조합한 최종 알고리즘 코딩</td>
-      </tr>
-      <tr class="row70">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 지역구 필터링 코딩</td>
-      </tr>
-      <tr class="row71">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- 영화: 현재 상영 영화 추천을 위한 데이터 추가</td>
-      </tr>
-      <tr class="row72">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 영화: 최종 모델 완성</td>
-      </tr>
-      <tr class="row73">
-        <td class="column0 style4 n">15</td>
-        <td class="column1 style11 s style12" rowspan="2">김동혁</td>
-        <td class="column2 style8 s">- 제작된 알고리즘을 python 파일 및 모듈로 제작</td>
-      </tr>
-      <tr class="row74">
-        <td class="column0 style5 n">06월 26일</td>
-        <td class="column2 style9 s">- 영상 촬영</td>
-      </tr>
-      <tr class="row75">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="3">류연주</td>
-        <td class="column2 style8 s">- 최종 만족도 조사 방식 제안</td>
-      </tr>
-      <tr class="row76">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style8 s">- 만족도 설문지 작성</td>
-      </tr>
-      <tr class="row77">
-        <td class="column0 style6 null"></td>
-        <td class="column2 style9 s">- 최종 발표 데모 영상 시나리오 작성 및 제작</td>
-      </tr>
-      <tr class="row78">
-        <td class="column0 style6 null"></td>
-        <td class="column1 style11 s style12" rowspan="2">유정수</td>
-        <td class="column2 style8 s">- 최종 발표자료 준비</td>
-      </tr>
-      <tr class="row79">
-        <td class="column0 style7 null"></td>
-        <td class="column2 style9 s">- 유저별 알고리즘 실행 결과 및 만족도 조사 메일 발송, 취합</td>
-      </tr>
-    </tbody>
-</table>
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style1 s">주차</td>
+            <td class="column1 style2 s">이름</td>
+            <td class="column2 style3 s">추진내용</td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style7 s style8" rowspan="6">2주차(3월 27일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 1차 프로젝트 제안서(3.기대효과 및 활용방안, 4. 수행방법 일부) 작성</td>
+          </tr>
+          <tr class="row2">
+            <td class="column2 style5 s">- 맛집/카페 : 수집 가능한 플랫폼 탐색</td>
+          </tr>
+          <tr class="row3">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- 1차 프로젝트 제안서(2. 과제 목표, 4. 수행방법 일부) 작성, 최종 취합</td>
+          </tr>
+          <tr class="row4">
+            <td class="column2 style5 s">- 데이트 명소: 수집 가능한 데이터 탐색</td>
+          </tr>
+          <tr class="row5">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- 1차 프로젝트 제안서(1. 과제 개요, 4. 수행방법 일부) 작성</td>
+          </tr>
+          <tr class="row6">
+            <td class="column2 style5 s">- 전시/영화 : 수집 가능한 데이터 탐색</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0 style7 s style8" rowspan="3">3주차(4월 3일)</td>
+            <td class="column1 style6 s">김동혁</td>
+            <td class="column2 style5 s">- 맛집/카페 : 망고플레이트를 통해 기본 데이터 및 리뷰 수집</td>
+          </tr>
+          <tr class="row8">
+            <td class="column1 style6 s">류연주</td>
+            <td class="column2 style5 s">- 데이트 명소 : 대한민국 구석구석(장소 데이터), TripAdvisor(리뷰 데이터) 크롤링 작업 시작</td>
+          </tr>
+          <tr class="row9">
+            <td class="column1 style6 s">유정수</td>
+            <td class="column2 style5 s">- 전시/영화 : 왓챠를 통한 영화 데이터 및 리뷰 크롤링</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style7 s style8" rowspan="4">4주차(4월 10일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 맛집/카페 : 망고플레이트, 다이닝코드에서 데이터 크롤링</td>
+          </tr>
+          <tr class="row11">
+            <td class="column2 style5 s">- clustering distance에 대한 research</td>
+          </tr>
+          <tr class="row12">
+            <td class="column1 style6 s">류연주</td>
+            <td class="column2 style5 s">- 데이트 명소 : 대한민국 구석구석(장소 데이터), TripAdvisor(리뷰 데이터) 크롤링 작업 완료</td>
+          </tr>
+          <tr class="row13">
+            <td class="column1 style6 s">유정수</td>
+            <td class="column2 style5 s">- 전시/영화 : 왓챠, 네이버영화에서 데이터 크롤링</td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style7 s style8" rowspan="4">5주차(4월 17일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 맛집/카페 : data 부족으로 인한 추가 크롤링</td>
+          </tr>
+          <tr class="row15">
+            <td class="column2 style5 s">- 맛집/카페 : okt 패키지를 이용한 한글 형태소 분석</td>
+          </tr>
+          <tr class="row16">
+            <td class="column1 style6 s">류연주</td>
+            <td class="column2 style5 s">- 데이트 명소 : Kakao Map 장소/리뷰 데이터 크롤링</td>
+          </tr>
+          <tr class="row17">
+            <td class="column1 style6 s">유정수</td>
+            <td class="column2 style5 s">-전시/영화 : 오픈갤러리에서 전시 데이터 크롤링, 네이버 카페에서 전시 리뷰 데이터 크롤링</td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style7 s style8" rowspan="6">6주차(4월 24일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 맛집/카페 : 한글 리뷰에서 형용사 추출</td>
+          </tr>
+          <tr class="row19">
+            <td class="column2 style5 s">- 한글 기반 Fast-Text로 임베딩 연구</td>
+          </tr>
+          <tr class="row20">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- 리뷰 자연어 처리를 위한 불용어 사전 구축 (한글)</td>
+          </tr>
+          <tr class="row21">
+            <td class="column2 style5 s">- Papago로 데이트 명소 리뷰 데이터 번역 후 tokenizing 테스트</td>
+          </tr>
+          <tr class="row22">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- 전시/영화 : 한글 리뷰에서 형용사 추출</td>
+          </tr>
+          <tr class="row23">
+            <td class="column2 style5 s">- 단순 형용사 추출 방법과 리뷰를 중요 문장으로 요약 후 형용사 추출 방법에 대해 연구</td>
+          </tr>
+          <tr class="row24">
+            <td class="column0 style7 s style8" rowspan="6">7주차(5월 1일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- word embedding에서의 CBOW와 SKIPGRAM에 대한 research</td>
+          </tr>
+          <tr class="row25">
+            <td class="column2 style5 s">- 맛집/카페: 데이터 통합 형식으로 변형</td>
+          </tr>
+          <tr class="row26">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- 데이트 명소: Kakao Map 데이터 크롤링 완료, 리뷰 및 장소 데이터를 통합 형식으로 변형</td>
+          </tr>
+          <tr class="row27">
+            <td class="column2 style5 s">- 리뷰 자연어 처리를 Fast-Text 기법 + Papago로 변형한 리뷰데이터로 진행</td>
+          </tr>
+          <tr class="row28">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- 전시/영화 : 크롤링 완료 후 데이터 통합 형식으로 변형</td>
+          </tr>
+          <tr class="row29">
+            <td class="column2 style5 s">- 번역하지 않은 데이터를 Fast-Text 기법을 사용해 embedding</td>
+          </tr>
+          <tr class="row30">
+            <td class="column0 style7 s style8" rowspan="8">8주차(5월 8일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 맛집/카페: 리뷰 영어로 번역</td>
+          </tr>
+          <tr class="row31">
+            <td class="column2 style5 s">- GMM, Affinity Propagation, Spectral 등 clustering 적용 시도</td>
+          </tr>
+          <tr class="row32">
+            <td class="column1 style7 s style8" rowspan="3">류연주</td>
+            <td class="column2 style4 s">- 리뷰 자연어 처리 Word2Vec, BERT, ELMO, GLoVe research</td>
+          </tr>
+          <tr class="row33">
+            <td class="column2 style4 s">- 데이트 명소: Word2Vec 적용 및 Fast-text와 비교</td>
+          </tr>
+          <tr class="row34">
+            <td class="column2 style5 s">- 데이트 명소: Kmeans, DBSCAN, GMM 클러스터링 기법 적용</td>
+          </tr>
+          <tr class="row35">
+            <td class="column1 style7 s style8" rowspan="3">유정수</td>
+            <td class="column2 style4 s">- 전시/영화: 전시 리뷰 데이터 부족으로 추가 탐색</td>
+          </tr>
+          <tr class="row36">
+            <td class="column2 style4 s">- 전시/영화: 한글 데이터에 대해 Word2Vec, Fast-text 적용 및 비교</td>
+          </tr>
+          <tr class="row37">
+            <td class="column2 style5 s">-embedding한 vector 클러스터링 진행(K-means, K-medoids, DBSCAN)</td>
+          </tr>
+          <tr class="row38">
+            <td class="column0 style7 s style8" rowspan="5">9주차(5월 15일)</td>
+            <td class="column1 style6 s">김동혁</td>
+            <td class="column2 style5 s">- Collaborative Filtering에서 Matrix Factorization에 대한 research</td>
+          </tr>
+          <tr class="row39">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- 데이트 명소: 카카오/트립어드바이저 모든 리뷰 Papago api 사용하여 영어로 번역</td>
+          </tr>
+          <tr class="row40">
+            <td class="column2 style5 s">- 데이트 명소: User matrix, Item matrix 생성</td>
+          </tr>
+          <tr class="row41">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- 전시/영화: Papago api를 사용하여 모든 리뷰 데이터 번역</td>
+          </tr>
+          <tr class="row42">
+            <td class="column2 style5 s">- 전시/영화: User matrix, Item matrix 생성</td>
+          </tr>
+          <tr class="row43">
+            <td class="column0 style7 s style8" rowspan="5">10주차(5월 22일)</td>
+            <td class="column1 style6 s">김동혁</td>
+            <td class="column2 style5 s">- Neural Collaborative Filtering 논문에 제시된 코드 연구</td>
+          </tr>
+          <tr class="row44">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- 데이트 명소: 카카오/트립어드바이저 모든 리뷰 api 사용하여 영어로 번역</td>
+          </tr>
+          <tr class="row45">
+            <td class="column2 style5 s">- 데이트 명소: User matrix, Item matrix 생성</td>
+          </tr>
+          <tr class="row46">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- NCF 논문 리뷰 및 적용 방안 제시</td>
+          </tr>
+          <tr class="row47">
+            <td class="column2 style5 s">- 영화: User matrix, Item matrix 생성</td>
+          </tr>
+          <tr class="row48">
+            <td class="column0 style7 s style8" rowspan="6">11주차(5월 29일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 맛집/카페 : NCF 모델 적용</td>
+          </tr>
+          <tr class="row49">
+            <td class="column2 style5 s">- 추천시스템 성능 평가방법 research</td>
+          </tr>
+          <tr class="row50">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- NCF모델 적용 방향 수정, Hybrid method research</td>
+          </tr>
+          <tr class="row51">
+            <td class="column2 style5 s">- 데이트 명소: NCF 모델 적용 (Microsoft 라이브러리)</td>
+          </tr>
+          <tr class="row52">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- Hybrid method 적용 방법 연구 및 라이브러리 탐색</td>
+          </tr>
+          <tr class="row53">
+            <td class="column2 style5 s">- 영화: Cornac 라이브러리 내부 로직 연구 및 NCF 모델 적용</td>
+          </tr>
+          <tr class="row54">
+            <td class="column0 style7 s style8" rowspan="6">12주차(6월 5일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- NCF를 이용한 라이브러리 검색 및 각 장단점 파악</td>
+          </tr>
+          <tr class="row55">
+            <td class="column2 style5 s">- User Matrix * Item Matrix cosine similarity 방식 테스트</td>
+          </tr>
+          <tr class="row56">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- User Matrix * Item Matrix 단순 행렬곱 적용 방식 테스트</td>
+          </tr>
+          <tr class="row57">
+            <td class="column2 style5 s">- Data Normalization 방식 research</td>
+          </tr>
+          <tr class="row58">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- 벡터의 유사도 측정 방법 research</td>
+          </tr>
+          <tr class="row59">
+            <td class="column2 style5 s">- User Matrix * Item Matrix 단순 행렬곱 적용 방식 테스트</td>
+          </tr>
+          <tr class="row60">
+            <td class="column0 style7 s style8" rowspan="5">13주차(6월 12일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 프로젝트 Flow chart 생성</td>
+          </tr>
+          <tr class="row61">
+            <td class="column2 style5 s">-  맛집/카페 : Matrix Data Normalization</td>
+          </tr>
+          <tr class="row62">
+            <td class="column1 style7 s style8" rowspan="2">류연주</td>
+            <td class="column2 style4 s">- 데이트 명소: 형용사 word-cluster 라벨링, 조사 문항에 넣을 20개 대표 형용사 선정</td>
+          </tr>
+          <tr class="row63">
+            <td class="column2 style5 s">-  데이트 명소 : Matrix Data Normalization</td>
+          </tr>
+          <tr class="row64">
+            <td class="column1 style6 s">유정수</td>
+            <td class="column2 style5 s">- 영화: cosine similarity 방식으로 변경 후 Matrix Data Normalization</td>
+          </tr>
+          <tr class="row65">
+            <td class="column0 style7 s style8" rowspan="8">14주차(6월 19일)</td>
+            <td class="column1 style7 s style8" rowspan="3">김동혁</td>
+            <td class="column2 style4 s">- 테스터들에게 보낼 설문지 중, 1) 형용사에 대해 느끼는 호감도 정도 문항 및 3) 지역구 선택 작성</td>
+          </tr>
+          <tr class="row66">
+            <td class="column2 style4 s">- 맛집/카페 : 최종 모델 완성</td>
+          </tr>
+          <tr class="row67">
+            <td class="column2 style5 s">- Random Search를 통한 NCF  hyper parameter tuning</td>
+          </tr>
+          <tr class="row68">
+            <td class="column1 style7 s style8" rowspan="3">류연주</td>
+            <td class="column2 style4 s">- 테스터들에게 보낼 설문지 중, 2-2) 데이트 명소 문항 작성</td>
+          </tr>
+          <tr class="row69">
+            <td class="column2 style4 s">- 맛집/카페, 데이트 명소, 영화 데이터를 조합한 최종 알고리즘 코딩</td>
+          </tr>
+          <tr class="row70">
+            <td class="column2 style5 s">- 지역구 필터링 코딩</td>
+          </tr>
+          <tr class="row71">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- 영화: 현재 상영 영화 추천을 위한 데이터 추가</td>
+          </tr>
+          <tr class="row72">
+            <td class="column2 style5 s">- 영화: 최종 모델 완성</td>
+          </tr>
+          <tr class="row73">
+            <td class="column0 style7 s style8" rowspan="7">15주차(6월 26일)</td>
+            <td class="column1 style7 s style8" rowspan="2">김동혁</td>
+            <td class="column2 style4 s">- 제작된 알고리즘을 python 파일 및 모듈로 제작</td>
+          </tr>
+          <tr class="row74">
+            <td class="column2 style5 s">- 영상 촬영</td>
+          </tr>
+          <tr class="row75">
+            <td class="column1 style7 s style8" rowspan="3">류연주</td>
+            <td class="column2 style4 s">- 최종 만족도 조사 방식 제안</td>
+          </tr>
+          <tr class="row76">
+            <td class="column2 style4 s">- 만족도 설문지 작성</td>
+          </tr>
+          <tr class="row77">
+            <td class="column2 style5 s">- 최종 발표 데모 영상 시나리오 작성 및 제작</td>
+          </tr>
+          <tr class="row78">
+            <td class="column1 style7 s style8" rowspan="2">유정수</td>
+            <td class="column2 style4 s">- 최종 발표자료 준비</td>
+          </tr>
+          <tr class="row79">
+            <td class="column2 style5 s">- 유저별 알고리즘 실행 결과 및 만족도 조사 메일 발송, 취합</td>
+          </tr>
+        </tbody>
+    </table>
