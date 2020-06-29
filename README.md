@@ -280,9 +280,8 @@ def main():
 |  11. 표본을 대상으로 만족도 조사 시행  |       |       |       |  :heavy_check_mark:     |
 
 
-
 ## Reports
-* [Final Report](reports/Final.pdf)
+* [Final Report](reports/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8(%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C_Khupid_%EC%9C%A0%EC%A0%95%EC%88%98).pdf)
 * [Demo video](reports/Demo.mp4)
 
 ## Contributors
