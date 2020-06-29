@@ -42,7 +42,8 @@
      * [Neural Collaborative Filtering](#ncf)
      * [Hybird Method](#hybrid_method)
   6. [Results](#results)
-  7. [Conclusion](#conclusion)
+  7. [Limitations](#limitations)
+  8. [Conclusion](#conclusion)
   
 ## Data crawling <a id="data_crawling"></a>
 데이터 크롤링은 각각 맛집/카페(이하 EAT), 데이트 명소(이하 GO), 영화(이하 WATCH)로 구분하여 카테고리별로 진행하였으며 각 카테고리별로 크롤링을 위해 이용한 플랫폼은 아래와 같다.
@@ -258,7 +259,10 @@ def main():
     print(f'영화가 끌리는 데이트라면 현재 상영중인 영화 {watch}은(는) 어떠신가요?')
 ```
 
-## Limitations
+## Limitations <a id="limitations"></a>
+<div align="center">
+<img width="400" alt="Limitations" src="https://user-images.githubusercontent.com/43227174/85978574-f6747f00-ba19-11ea-8cd0-184fffd77397.png">
+</div>
 이번 프로젝트는 모델들의 결함을 서로 보충하여 hybrid model을 직접 구축하는 단계로 진행하였다. 실제로 Contents based filtering과 Neural Collaborating filtering의 결과를 조합하는 과정에서 한쪽 모델만 높게 예측한 아이템이 아닌 두 모델 모두 예측값이 좋은 아이템을 찾는 데에 비중을 두게 되었다. 그 과정에서 적절한 조합 방법을 찾지 못했고 단순히 두 값을 곱하는 방법을 사용했으며 결과적으로 최종 result의 prediction값이 낮아졌다는 점이 이 프로젝트의 한계점으로 남는다.
 
 ## Conclusion <a id="conclusion"></a>
