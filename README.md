@@ -217,6 +217,7 @@ NCF모델의 hyper parameter는 Random Search를 이용해 구했고, **early st
 <div align="center">
 <img width="727" alt="hybrid" src="https://user-images.githubusercontent.com/44253680/85939510-18ee9580-b951-11ea-8712-e11b20ded490.png">
 </div>
+
 CBF 모델과 NCF 모델의 결과값을 결합하는 방식으로 최종 prediction score를 도출한다. 이때 최종 score는 두 모델의 score를 단순 곱하는 식으로 사용했다.   
 이때 결합 방식을 산술평균, 조화평균으로도 생각해보았지만 이는 다른 한 모델이 낮게 예측한 item을 추천해주는 상황을 야기했다. 따라서 단순 곱을 통해 두 모델이 모두 높은 점수를 낸 item을 추천하도록 했다.
 
@@ -261,9 +262,10 @@ def main():
 
 ## Limitations <a id="limitations"></a>
 <div align="center">
-<img width="400" alt="Limitations" src="https://user-images.githubusercontent.com/43227174/85978574-f6747f00-ba19-11ea-8cd0-184fffd77397.png">
+<img width="80%" alt="Limitations" src="https://user-images.githubusercontent.com/43227174/85978574-f6747f00-ba19-11ea-8cd0-184fffd77397.png">
 </div>
-이번 프로젝트는 모델들의 결함을 서로 보충하여 hybrid model을 직접 구축하는 단계로 진행하였다. 실제로 Contents based filtering과 Neural Collaborating filtering의 결과를 조합하는 과정에서 한쪽 모델만 높게 예측한 아이템이 아닌 두 모델 모두 예측값이 좋은 아이템을 찾는 데에 비중을 두게 되었다. 그 과정에서 적절한 조합 방법을 찾지 못했고 단순히 두 값을 곱하는 방법을 사용했으며 결과적으로 최종 result의 prediction값이 낮아졌다는 점이 이 프로젝트의 한계점으로 남는다.
+
+&nbsp;&nbsp;&nbsp;&nbsp;이번 프로젝트는 모델들의 결함을 서로 보충하여 hybrid model을 직접 구축하는 단계로 진행하였다. 실제로 Contents based filtering과 Neural Collaborating filtering의 결과를 조합하는 과정에서 한쪽 모델만 높게 예측한 아이템이 아닌 두 모델 모두 예측값이 좋은 아이템을 찾는 데에 비중을 두게 되었다. 그 과정에서 적절한 조합 방법을 찾지 못했고 단순히 두 값을 곱하는 방법을 사용했으며 결과적으로 최종 result의 prediction값이 낮아졌다는 점이 이 프로젝트의 한계점으로 남는다.
 
 ## Conclusion <a id="conclusion"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;이번 프로젝트에서는 서울 내의 맛집/카페, 데이트 명소, 영화를 모두 포함한 데이트 코스 추천 알고리즘을 기획하고 개발하였다. 단일 장소에 대한 추천을 넘어 각 장소들을 조합하여(필터링 등) 데이트 코스로 추천해주었다는 점에 의의가 있으며 위와 같은 결과를 도출하기 위해 어떤 추천 알고리즘을 사용해야 이 주제에서 가장 적합한 추천을 할 수 있을지에 대한 고민을 통해 다양한 추천 알고리즘의 특성 및 활용 방법을 익힐 수 있었다. 또한 최종 추천을 위해 사용되는 자연어 처리/형용사 추출, 형용사 embedding, vector clustering/clustering distance, data normalization, vector 유사도 측정에 대해서도 각각 어떤 방법론들이 있고 어떤 상황에서 사용해야 하는지 등을 찾아보면서 진행했다. 분석에 적합한 방법들에 대해 성능 평가를 동시에 진행하며 최종적인 알고리즘을 완성할 수 있었다.   
